@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/*:root {
+  --main-color: #740001;
+  --secondary-color: #ae0001;
+  --third-color: #eeba30;
+  --fourth-color: #d3a625;
+  --fifth-color: #000000;
+}gryfindor */
+
+:root {
+  --main-color: #d9534f;
+  --secondary-color: #f9f9f9;
+  --third-color: #5bc0de;
+  --fourth-color: #5cb85c;
+  --fifth-color: #428bca;
+}
+
+body {
+    font-family: 'Raleway', sans-serif; /* Change this to the font you want to preview */
+}
+
+.header-text-style {
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.app-background {
+    background-color: var(--main-color);
+}
+
+.txt-main {
+    background-color: var(--secondary-color) !important;
+}
+
+.txt-main-color {
+    color: var(--fifth-color) !important;
+}
+
+.p-background {
+    background-color: var(--fourth-color) !important;
+}
+
+.button-bg {
+    background-color: var(--third-color) !important;
+}
+
+.button-color {
+    color: var(--third-color) !important;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--third-color);
+    --bs-btn-border-color: var(--main-color) !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--main-color) !important;
+    --bs-btn-hover-border-color: var(--third-color);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--third-color);
+    --bs-btn-active-border-color: var(--main-color) !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: var(--main-color) !important;
+    --bs-btn-border-color: var(--main-color) !important;
+    --bs-btn-hover-color: var(--third-color);
+    --bs-btn-hover-bg: var(--main-color) !important;
+    --bs-btn-hover-border-color: var(--third-color) !important;
+    --bs-btn-focus-shadow-rgb: 108,117,125;
+    --bs-btn-active-color: var(--main-color) !important;
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-border-color: var(--main-color) !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #6c757d;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #6c757d;
+    --bs-gradient: none;
+}
+
+.rounded-custom {
+    border-radius: 3% !important;
+}
+
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-border {
+    border: 50px solid var(--secondary-color); /* Adjust the thickness as needed */
+    border-radius: 50%; /* Makes it circular */
+    padding: 100px; /* Adjust the padding as needed */
+    box-sizing: border-box; /* Ensures the padding is included in the total width/height */
+    margin-top: 20px;
+}
+
+.carousel-image {
+    width: 100px; /* Adjust the width as needed */
+    height: 500px; /* Adjust the height as needed */
+    object-fit: cover; /* Maintain aspect ratio while covering the specified dimensions */
+    border-radius: 10px; /* Add rounded corners if desired */
+}
+
+.carousel-box {
+    border: 25px solid var(--secondary-color); /* Add border styling */
+    padding: 20px; /* Add padding inside the box */
+    border-radius: 10px; /* Add rounded corners if desired */
+    /* Add any additional styling as needed */
+}
+
+a {
+    color: var(--fifth-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}

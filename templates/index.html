@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% block title %}RWC | Orangeliquid{% endblock %}
+{% block content %}
+
+<div class="px-4 pt-5 my-5 text-center border-bottom txt-main rounded-custom">
+    <h1 class="display-4 fw-bold text-body-emphasis txt-main-color">Remote Work Cafes</h1>
+    <h2 class="display-6 fw-bold text-body-emphasis txt-main-color">Columbus, OH</h2>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Welcome to my guide for remote workers in the Columbus area! Discover the perfect blend of
+            productivity and comfort as we explore the best cafes in Columbus, thoughtfully curated for remote work.
+            Immerse yourself in a thriving atmosphere where high-speed wifi and an array of coffee options seamlessly
+            combine to enhance your remote working experience.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" onclick="scrollToCafesSection()">Cafes</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">About</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function scrollToCafesSection() {
+        var element = document.getElementById("cafesSection");
+        element.scrollIntoView({ behavior: "smooth" });
+    }
+</script>
+
+<div class="b-example-divider"></div>
+
+<div id="cafesSection" class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="static/images/osu/OSU-Seal.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="The Ohio State
+            University Insignia"
+                 width="200" height="200" loading="lazy">
+            <h2 class="fw-normal">OSU Campus</h2>
+            <p>In the heart of Columbus lies The Ohio State University! Boasting a massive campus, of course there are
+                a plethora of Cafes to remotely work at!</p>
+            <p><a class="btn btn-primary" href="{{ url_for('osu') }}">Visit Cafes »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img src="static/images/downtown/dtc.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Skyrise of Downtown
+            Columbus Ohio"
+                 width="300" height="300" loading="lazy">
+            <h2 class="fw-normal">Downtown</h2>
+            <p>The Metropolitan area of Downtown Columbus offers neck-breaking skyscrapers and diverse businesses to
+                peruse!</p>
+            <p><a class="btn btn-primary" href="#">Visit Cafes »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img src="static/images/clintonville/clintonville.jpg" class="img-fluid border rounded-3 shadow-lg mb-4"
+                 alt="A historic metal sign reading Clintonville"
+                 width="300" height="300" loading="lazy">
+            <h2 class="fw-normal">North</h2>
+            <p>Discover the historic area of Clintonville, stocked with local grinds and rustic chic. This part of town
+                just north of OSU offers a glimpse of what was!</p>
+            <p><a class="btn btn-primary" href="#">Visit Cafes »</a></p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+</div>
+
+<div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="static/images/german-village/german-village.jpg" class="img-fluid border rounded-3 shadow-lg mb-4"
+                 alt="Old brick buildings of German Village in spring"
+                 width="300" height="300" loading="lazy">
+            <h2 class="fw-normal">South</h2>
+            <p>Explore the enchanting streets of German Village, where cobblestone pathways wind through historic brick
+                homes. Delight in cozy cafes, charming boutiques, and a blend of German and Victorian architecture.</p>
+            <p><a class="btn btn-primary" href="#">Visit Cafes »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img src="static/images/bexley/bexley.jpg" class="img-fluid border rounded-3 shadow-lg mb-4"
+                 alt="A large old four story building in Bexley Ohio"
+                 width="300" height="300" loading="lazy">
+            <h2 class="fw-normal">East</h2>
+            <p>Step into the timeless elegance of Bexley, an idyllic suburb nestled in the heart of Columbus. Known for
+                its tree-lined streets, historic homes, and a sense of community, Bexley exudes a classic charm. </p>
+            <p><a class="btn btn-primary" href="#">Visit Cafes »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img src="static/images/grandview/grandview.jpg" class="img-fluid border rounded-3 shadow-lg mb-4"
+                 alt="A sky-view of Grandview Ohio looking towards downtown Columbus"
+                 width="300" height="300" loading="lazy">
+            <h2 class="fw-normal">West</h2>
+            <p>A lively suburb brimming with a friendly atmosphere and modern charm. This eclectic neighborhood,
+                situated near downtown Columbus, welcomes you with trendy shops, inviting cafes, and a mix of historic
+                and contemporary architecture.</p>
+            <p><a class="btn btn-primary" href="#">Visit Cafes »</a></p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+</div>
+
+{% endblock %}

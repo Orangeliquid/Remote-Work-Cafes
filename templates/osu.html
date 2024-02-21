@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% block title %}RWC | Orangeliquid{% endblock %}
+{% block content %}
+
+<div class="hero-border container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="static/images/osu/OSU-Seal.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                 width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 txt-main-color">The Ohio State University</h1>
+            <p class="lead">The Ohio State University, located in Columbus, Ohio, stands as a prestigious institution
+                known
+                for its academic excellence and vibrant campus life. Surrounding the university are numerous cafes,
+                offering a
+                diverse array of settings for remote work.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="https://www.osu.edu/" class="btn btn-primary btn-lg px-4 me-md-2" role="button">Visit OSU</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="b-example-divider"></div>
+
+<div class="container">
+    <div class="col-lg-6 text-center">
+        <h2 class="display-6 fw-bold text-body-emphasis lh-1 mb-5">
+            <a href="https://www.gatamagicacbus.com/" class="text-decoration-none">Gata Mágica Café and Lounge</a>
+        </h2>
+    </div>
+</div>
+
+<div class="container">
+    <div class="carousel-box">
+        <div id="cafeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Cafe Location 1 -->
+                <div class="carousel-item active">
+                    <img src="static/images/osu/gata1.jpg" class="d-block w-100 carousel-image" alt="Cafe Location 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/osu/gata2.jpeg" class="d-block w-100 carousel-image" alt="Cafe Location 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/osu/gata3.jpg" class="d-block w-100 carousel-image" alt="Cafe Location 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/osu/gata4.jpg" class="d-block w-100 carousel-image" alt="Cafe Location 2">
+                </div>
+                <!-- Add more carousel items here if needed -->
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#cafeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cafeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <p class="lead">1762 N High St, Columbus, OH 43201</p>
+</div>
+
+<div class="container">
+    <article class="blog-post">
+            <h3 class="display-5 link-body-emphasis mb-1">Their Story Summarized:</h3>
+            <p>Gata Mágica Café and Lounge, situated adjacent to the OSU campus, is a recently established coffee shop
+                dedicated to delivering a distinctive and enchanting experience with a strong ethical foundation. Our
+                commitment extends to using Fair Trade Organic Brazilian coffee beans, freshly roasted locally in Ohio.
+                Our goal is to create a welcoming and uplifting ambiance for our patrons to savor quality coffee, engage
+                in study sessions, or simply unwind.</p>
+            <p>The lure of this Cafe is the location. Being right on High street, anyone can feel like a part of
+            campus life. You will be brushing elbows with students and faculty alike. This location may be a bit busy
+            and loud but if campus life intrigues you, this is a stellar location for some coffee!</p>
+            <h4>Time of Business</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Open</th>
+                  <th>Close</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday - Saturday</td>
+                  <td>8am</td>
+                  <td>7pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10am</td>
+                  <td>5pm</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+          </article>
+</div>
+
+<div class="b-example-divider"></div>
+
+{% endblock %}
