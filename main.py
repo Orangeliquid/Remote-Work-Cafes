@@ -19,15 +19,12 @@ def osu():
 
 @app.route("/downtown")
 def downtown():
-    pass
-    # return render_template("osu.html")
+    return render_template("downtown.html")
 
 
 @app.route("/north")
 def north():
-    pass
-    # return render_template("osu.html") if __name__ == "__main__":
-    app.run(debug=True, port=5002)
+    return render_template("north.html")
 
 
 if __name__ == "__main__":

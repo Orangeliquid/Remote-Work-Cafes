@@ -106,6 +106,35 @@ body {
     margin-top: 20px;
 }
 
+.summary-border {
+    border: 5px solid var(--fifth-color); /* Adjust the thickness as needed */
+    border-radius: 8px; /* Adjust the radius as needed */
+    padding: 20px; /* Adjust the padding as needed */
+    box-sizing: border-box; /* Ensures the padding is included in the total width/height */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.my-take {
+    position: relative;
+    background-color: var(--third-color); /* Choose a different background color */
+    border: 1px solid #ced4da; /* Choose a different border color */
+    padding: 40px;
+    padding-top: 40px; /* Add padding for better spacing */
+    padding-bottom: 20px;
+    color: var(--secondary-color) ; /* Use 'color' instead of 'font-color' */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.custom-icon {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+}
+
 .carousel-image {
     width: 100px; /* Adjust the width as needed */
     height: 500px; /* Adjust the height as needed */
@@ -126,4 +155,8 @@ a {
 
 a:hover {
     color: var(--secondary-color);
+}
+
+strong {
+    font-weight: bold;
 }
