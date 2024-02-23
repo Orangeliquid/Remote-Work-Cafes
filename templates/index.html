@@ -12,7 +12,7 @@
             combine to enhance your remote working experience.</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
             <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" onclick="scrollToCafesSection()">Cafes</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">About</button>
+            <a href="{{ url_for('about') }}" class="btn btn-outline-secondary btn-lg px-4" role="button">About</a>
         </div>
     </div>
 </div>
@@ -71,7 +71,7 @@
             <h2 class="fw-normal">South</h2>
             <p>Explore the enchanting streets of German Village, where cobblestone pathways wind through historic brick
                 homes. Delight in cozy cafes, charming boutiques, and a blend of German and Victorian architecture.</p>
-            <p><a class="btn btn-primary" href="#">Visit Cafes »</a></p>
+            <p><a class="btn btn-primary" href="{{ url_for('south') }}">Visit Cafes »</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
             <img src="static/images/east/bexley.jpg" class="img-fluid border rounded-3 shadow-lg mb-4"
@@ -80,7 +80,7 @@
             <h2 class="fw-normal">East</h2>
             <p>Step into the timeless elegance of Bexley, an idyllic suburb nestled in the heart of Columbus. Known for
                 its tree-lined streets, historic homes, and a sense of community, Bexley exudes a classic charm. </p>
-            <p><a class="btn btn-primary" href="#">Visit Cafes »</a></p>
+            <p><a class="btn btn-primary" href="{{ url_for('east') }}">Visit Cafes »</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
             <img src="static/images/west/grandview.jpg" class="img-fluid border rounded-3 shadow-lg mb-4"
@@ -90,7 +90,7 @@
             <p>A lively suburb brimming with a friendly atmosphere and modern charm. This eclectic neighborhood,
                 situated near downtown Columbus, welcomes you with trendy shops, inviting cafes, and a mix of historic
                 and contemporary architecture.</p>
-            <p><a class="btn btn-primary" href="#">Visit Cafes »</a></p>
+            <p><a class="btn btn-primary" href="{{ url_for('west') }}">Visit Cafes »</a></p>
         </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 </div>

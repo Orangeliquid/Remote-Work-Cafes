@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% block title %}West | Orangeliquid{% endblock %}
+{% block content %}
+
+<div class="hero-border container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="static/images/west/grandview.jpg" class="d-block mx-lg-auto img-fluid rounded"
+                 alt="A Sky view of Grandview, OH. In the distance is Downtown Columbus"
+                 width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 txt-main-color">West Columbus</h1>
+            <p class="lead">West Columbus unfolds its vibrant tapestry, and within this lively region, Grandview emerges
+                as a standout neighborhood, contributing its unique charm. Delighting residents and visitors alike,
+                Grandview's tree-lined streets and warm community spirit add to the appeal of West Columbus. As you
+                traverse this picturesque area, a multitude of cafes presents itself, surpassing the usual offerings of
+                delightful coffee and pastries. These establishments also serve as tranquil havens ideal for remote
+                work.</p>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="https://en.wikipedia.org/wiki/West_Columbus"
+                   class="btn btn-primary btn-lg px-4 me-md-2" role="button">Read More</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="b-example-divider"></div>
+
+<div class="container">
+    <div class="col-lg-6 text-center">
+        <h2 class="display-6 fw-bold text-body-emphasis lh-1 mb-5">
+            <a href="https://www.yelp.com/biz/the-bexley-coffee-shop-bexley-2" class="text-decoration-none">Grandview
+                Grind</a>
+        </h2>
+    </div>
+</div>
+
+<div class="container">
+    <div class="carousel-box">
+        <div id="cafeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Cafe Location 1 -->
+                <div class="carousel-item active">
+                    <img src="static/images/west/gg1.jpg" class="d-block w-100 carousel-image"
+                         alt="Grandview Grind 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/west/gg2.jpg" class="d-block w-100 carousel-image"
+                         alt="Grandview Grind 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/west/gg3.jpg" class="d-block w-100 carousel-image"
+                         alt="Grandview Grind 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/west/gg4.jpg" class="d-block w-100 carousel-image"
+                         alt="Grandview Grind 4">
+                </div>
+                <!-- Add more carousel items here if needed -->
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#cafeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cafeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<section class="container">
+    <article class="blog-post">
+        <div class="txt-main txt-main-color summary-border">
+            <h2 class="display-5 body-emphasis mb-3">Grandview Grind</h2>
+            <p>Grandview Grind is a full traditional coffee retail house. Offering locally roasted coffee, full espresso
+                bar, specialty drinks, smoothies, fresh bakery items and fresh fruit.</p>
+        </div>
+        <div class="my-take">
+            <img class="custom-icon rounded-circle" src="static/icons/orange_alien.ico" alt="Orange Alien Icon">
+            <p><strong>I am seeing some mixed reviews on this location. Some love the quiet atmosphere, some accuse the
+                workers of being borderline non-verbal! I found this location to be somewhat tough to navigate seeing as
+                the parking is lackluster and resides in a strip mall. This is the one downside, but the upside surely
+                outweighs these shortcomings. I will let Bobby C. of Yelp.com explore this establishment
+                further:</strong></p>
+            <p>"I will never not recommend this place. It's cute and quaint, it's a small business that's locally owned,
+                the baristas are friendly and great at what they do, and they have local artists' works displayed
+                inside. It's definitely unique!
+
+                Wi-Fi inside is good. There's usually seating available. It's not exceedingly loud inside. They have a
+                nice selection of pastries. And their coffee is really good (and the beans they use rotates between
+                different great suppliers such as Thunderkiss, Florin, Brioso, etc). I'd love to see them roast their
+                own eventually!"</p>
+        </div>
+        <h3>Time of Business</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>Days</th>
+                    <th>Open</th>
+                    <th>Close</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Monday-Friday</td>
+                    <td>6am</td>
+                    <td>8pm</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>6am</td>
+                    <td>6pm</td>
+                </tr>
+                <tr>
+                    <td>Saturday/Sunday</td>
+                    <td>7am</td>
+                    <td>5pm</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <p class="lead">Located at: <strong>1423 Grandview Ave Columbus, OH 43212</strong></p>
+        </div>
+    </article>
+</section>
+
+
+<div class="b-example-divider"></div>
+
+{% endblock %}

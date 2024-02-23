@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% block title %}South | Orangeliquid{% endblock %}
+{% block content %}
+
+<div class="hero-border container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="static/images/south/german-village.jpg" class="d-block mx-lg-auto img-fluid rounded"
+                 alt="German village on a sunny day with budding trees"
+                 width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 txt-main-color">South Columbus</h1>
+            <p class="lead">German Village unfolds as a captivating neighborhood celebrated for its rich heritage and architectural allure. Quaint cobblestone streets wind through this picturesque locale, leading to a myriad of cafes that not only exude cozy atmospheres but also serve as ideal havens for remote work. German Village's coffee shops, with their rustic charm and modern amenities, provide the perfect backdrop for a productive workday. </p>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="https://en.wikipedia.org/wiki/South_Columbus_(Ohio)"
+                   class="btn btn-primary btn-lg px-4 me-md-2" role="button">Read More</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="b-example-divider"></div>
+
+<div class="container">
+    <div class="col-lg-6 text-center">
+        <h2 class="display-6 fw-bold text-body-emphasis lh-1 mb-5">
+            <a href="https://www.staufs.com/germanvillagemenu" class="text-decoration-none">Stauf's Coffee</a>
+        </h2>
+    </div>
+</div>
+
+<div class="container">
+    <div class="carousel-box">
+        <div id="cafeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Cafe Location 1 -->
+                <div class="carousel-item active">
+                    <img src="static/images/south/stauf1.jpg" class="d-block w-100 carousel-image"
+                         alt="Stauf's Coffee 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/south/stauf2.jpg" class="d-block w-100 carousel-image"
+                         alt="Stauf's Coffee 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/south/stauf3.jpg" class="d-block w-100 carousel-image"
+                         alt="Stauf's Coffee 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/south/stauf4.jpg" class="d-block w-100 carousel-image"
+                         alt="Stauf's Coffee 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/south/stauf5.jpg" class="d-block w-100 carousel-image"
+                         alt="Stauf's Coffee 5">
+                </div>
+                <!-- Add more carousel items here if needed -->
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#cafeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cafeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<section class="container">
+    <article class="blog-post">
+        <div class="txt-main txt-main-color summary-border">
+            <h2 class="display-5 body-emphasis mb-3">Stauf's Coffee: Their Story</h2>
+            <p>"In 1988 Stauf’s Coffee Roasters began offering specialty coffee to Central Ohio.  From day one we have been obsessed with the entire process of achieving the finest cup of coffee- from acquiring the best specialty grade green arabica beans available, to roasting exclusively on gas-fired drum roasters.  All of the coffees that we offer are roasted by us, by hand, everyday. Our profile method of roasting coffee in small batches allows us to concentrate on the best roast and flavor profile for each varietal and origin. You will not experience coffees of higher quality, consistency, or freshness.  Our coffee is fresh and shipped within 48 hours of roasting.  We are Columbus’ first micro roaster and we'll always provide you with the best coffee available."</p>
+        </div>
+        <div class="my-take">
+            <img class="custom-icon rounded-circle" src="static/icons/orange_alien.ico" alt="Orange Alien Icon">
+            <p><strong>I may be biased, but I genuinely love this company! Stauf's coffee represents my first delightful encounter with locally roasted coffee beans. The rich flavor left such an impression on me that I couldn't resist purchasing a pour-over and some filters to complement my freshly roasted bag of Stauf's Breakfast Blend. But enough about my coffee journey; let's talk about Stauf's Coffee shop in German Village, which offers an incredible setting for remote work. The only drawback is the limited indoor seating. Weather permitting, Stauf's Coffee, with its inviting ambiance, strong Wi-Fi, and delicious brews, is sure to ignite any remote worker's ambition to conquer the day!</strong></p>
+        </div>
+        <h3>Time of Business</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>Days</th>
+                    <th>Open</th>
+                    <th>Close</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Everyday</td>
+                    <td>7am</td>
+                    <td>6pm</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <p class="lead">Located at: <strong>627 S 3rd St #1060, Columbus, OH 43206</strong></p>
+        </div>
+    </article>
+</section>
+
+
+<div class="b-example-divider"></div>
+
+{% endblock %}

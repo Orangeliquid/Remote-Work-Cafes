@@ -27,5 +27,25 @@ def north():
     return render_template("north.html")
 
 
+@app.route("/east")
+def east():
+    return render_template("east.html")
+
+
+@app.route("/south")
+def south():
+    return render_template("south.html")
+
+
+@app.route("/west")
+def west():
+    return render_template("west.html")
+
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=5002)
